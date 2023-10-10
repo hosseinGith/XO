@@ -21,6 +21,7 @@ divs.forEach((item) => {
       item.textContent = "X";
       item.classList.add("X");
       item.classList.remove("O");
+      nextPlayer.textContent = "حرکت بعدی : O";
       pcsXO++;
     } else if (!item.classList.contains("X")) {
       next = true;
@@ -28,6 +29,7 @@ divs.forEach((item) => {
       item.classList.add("O");
       item.classList.remove("X");
       pcsXO++;
+      nextPlayer.textContent = "حرکت بعدی : X";
     }
     // -------for X ------
     if (
