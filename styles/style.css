@@ -1,0 +1,124 @@
+@font-face {
+  font-family: vazir;
+  src: url(../assets/vazir/Vazir.ttf) format("truetype");
+  src: url(../assets/vazir/Vazir.woff) format("woff");
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: vazir;
+}
+.container {
+  max-width: 1366px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+header section {
+  width: 100%;
+  padding: 10px;
+}
+.nextPlayerContainer {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+main {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main section > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tekTakTok {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border: 1px solid;
+  position: absolute;
+}
+
+.tekTakTok span {
+  position: absolute;
+  border: 1px solid;
+  z-index: 2;
+}
+.tekTakTok span:nth-child(1) {
+  width: 100%;
+  left: 0;
+  top: 33%;
+}
+.tekTakTok span:nth-child(2) {
+  height: 100%;
+  left: 33%;
+  top: 0%;
+}
+.tekTakTok span:nth-child(3) {
+  width: 100%;
+  left: 0;
+  top: 66%;
+}
+.tekTakTok span:nth-child(4) {
+  height: 100%;
+  left: 66%;
+  top: 0ch;
+}
+.tekTakTok div {
+  width: 33%;
+  height: 33%;
+  font-size: 60px;
+  position: absolute;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-family: tahoma;
+}
+.tekTakTok div.active {
+  color: #ff0000;
+}
+.tekTakTok div.div2 {
+  left: 33%;
+}
+.tekTakTok div.div3 {
+  left: 66%;
+}
+.tekTakTok div.div4 {
+  top: 33%;
+}
+.tekTakTok div.div5 {
+  left: 33%;
+  top: 33%;
+}
+.tekTakTok div.div6 {
+  left: 66%;
+  top: 33%;
+}
+.tekTakTok div.div7 {
+  top: 66%;
+}
+.tekTakTok div.div8 {
+  top: 66%;
+  left: 33%;
+}
+.tekTakTok div.div9 {
+  top: 66%;
+  left: 66%;
+}
